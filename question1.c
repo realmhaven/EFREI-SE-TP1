@@ -2,24 +2,37 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-int tab2D1() {
-    int **tab2D = NULL;
-    unsigned int dim1 = 0, dim2 = 0, i = 0, j = 0;
-
-    printf("dim1 & dim2 : ");
-    scanf(" %d %d", &dim1, &dim2);
-
-    tab2D = malloc(dim1 * sizeof(int *));
-
-    for (i = 0; i < dim1; i++) {
-        tab2D[i] = (int *) malloc(dim2 * sizeof(int));
+int** create_tab2D1(unsigned int rows, unsigned int cols) {
+    unsigned int i;
+    int** tab2D = (int**)malloc(rows * sizeof(int *));
+    for (i = 0; i < rows; i++) {
+        tab2D[i] = (int *)malloc(cols * sizeof(int));
     }
-    for (i = 0; i < dim1; i++) {
-        for (j = 0; j < dim2; j++) {
-            tab2D[i][j] = i + j;
-            printf(" %d", tab2D[i][j]);
+    return tab2D;
+}
+
+void create_tab2D2(unsigned int rows, unsigned int cols, int ***tab2D) {
+    unsigned int i;
+    *tab2D = (int**)malloc(rows * sizeof(int *));
+    for (i = 0; i < rows; i++) {
+        (*tab2D)[i] = (int *)malloc(cols * sizeof(int));
+    }
+}
+
+void printTab(unsigned int rows, unsigned int cols, int **tab2D) {
+    unsigned int i, j;
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++) {
+            printf("%d ", tab2D[i][j]);
         }
         printf("\n");
     }
-    return 0;
+}
+
+void freeTab(unsigned int rows, int **tab2D) {
+    unsigned int i;
+    for (i = 0; i < rows; i++) {
+        free(tab2D[i]);
+    }
+    free(tab2D);
 }
