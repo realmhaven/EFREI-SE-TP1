@@ -1,0 +1,6 @@
+#ifndef EFREI_SE_TP1_QUESTION1_H
+#define EFREI_SE_TP1_QUESTION1_H
+
+int tab2D1();
+
+#endif //EFREI_SE_TP1_QUESTION1_H
