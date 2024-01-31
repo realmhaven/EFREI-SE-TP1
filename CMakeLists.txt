@@ -7,4 +7,10 @@ add_executable(EFREI_SE_tp1 main.c
         question1.c
         question1.h
         correction/gestion_tableaux.c
-        correction/test_gestion_tableaux.c)
+        correction/test_gestion_tableaux.c
+        question2.c
+        question2.h
+        test_Q1.c
+        test_Q1.h
+        test_Q2.c
+        test_Q2.h)

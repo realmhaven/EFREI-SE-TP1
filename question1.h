@@ -1,8 +1,8 @@
 #ifndef EFREI_SE_TP1_QUESTION1_H
 #define EFREI_SE_TP1_QUESTION1_H
 
-int** create_tab2D1();
-void create_tab2D2();
+int** allocate_tab2D();
+void allocate_tab2D_bis();
 void printTab();
 int** fillTab();
 void freeTab();

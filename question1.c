@@ -2,7 +2,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-int **create_tab2D1(unsigned int rows, unsigned int cols) {
+int **allocate_tab2D(unsigned int rows, unsigned int cols) {
     unsigned int i;
     int **tab2D = (int **) malloc(rows * sizeof(int *));
     for (i = 0; i < rows; i++) {
@@ -11,7 +11,7 @@ int **create_tab2D1(unsigned int rows, unsigned int cols) {
     return tab2D;
 }
 
-void create_tab2D2(unsigned int rows, unsigned int cols, int ***tab2D) {
+void allocate_tab2D_bis(unsigned int rows, unsigned int cols, int ***tab2D) {
     unsigned int i;
     *tab2D = (int **) malloc(rows * sizeof(int *));
     for (i = 0; i < rows; i++) {
