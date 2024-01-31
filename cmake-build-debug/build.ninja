@@ -61,6 +61,18 @@ build CMakeFiles/EFREI_SE_tp1.dir/question1.c.obj: C_COMPILER__EFREI_SE_tp1_unsc
   OBJECT_DIR = CMakeFiles\EFREI_SE_tp1.dir
   OBJECT_FILE_DIR = CMakeFiles\EFREI_SE_tp1.dir
 
+build CMakeFiles/EFREI_SE_tp1.dir/correction/gestion_tableaux.c.obj: C_COMPILER__EFREI_SE_tp1_unscanned_Debug C$:/Users/arnau/CLionProjects/EFREI_SE_tp1/correction/gestion_tableaux.c || cmake_object_order_depends_target_EFREI_SE_tp1
+  DEP_FILE = CMakeFiles\EFREI_SE_tp1.dir\correction\gestion_tableaux.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EFREI_SE_tp1.dir
+  OBJECT_FILE_DIR = CMakeFiles\EFREI_SE_tp1.dir\correction
+
+build CMakeFiles/EFREI_SE_tp1.dir/correction/test_gestion_tableaux.c.obj: C_COMPILER__EFREI_SE_tp1_unscanned_Debug C$:/Users/arnau/CLionProjects/EFREI_SE_tp1/correction/test_gestion_tableaux.c || cmake_object_order_depends_target_EFREI_SE_tp1
+  DEP_FILE = CMakeFiles\EFREI_SE_tp1.dir\correction\test_gestion_tableaux.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EFREI_SE_tp1.dir
+  OBJECT_FILE_DIR = CMakeFiles\EFREI_SE_tp1.dir\correction
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target EFREI_SE_tp1
@@ -69,7 +81,7 @@ build CMakeFiles/EFREI_SE_tp1.dir/question1.c.obj: C_COMPILER__EFREI_SE_tp1_unsc
 #############################################
 # Link the executable EFREI_SE_tp1.exe
 
-build EFREI_SE_tp1.exe: C_EXECUTABLE_LINKER__EFREI_SE_tp1_Debug CMakeFiles/EFREI_SE_tp1.dir/main.c.obj CMakeFiles/EFREI_SE_tp1.dir/question1.c.obj
+build EFREI_SE_tp1.exe: C_EXECUTABLE_LINKER__EFREI_SE_tp1_Debug CMakeFiles/EFREI_SE_tp1.dir/main.c.obj CMakeFiles/EFREI_SE_tp1.dir/question1.c.obj CMakeFiles/EFREI_SE_tp1.dir/correction/gestion_tableaux.c.obj CMakeFiles/EFREI_SE_tp1.dir/correction/test_gestion_tableaux.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\EFREI_SE_tp1.dir

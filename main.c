@@ -7,8 +7,11 @@ int main() {
     int cols = 3;
 
     int **matrice = create_tab2D1(rows, cols);
+    create_tab2D2(rows, cols, &matrice);
+
     fillTab(rows,cols,matrice);
     printTab(rows, cols, matrice);
+    freeTab(rows, matrice);
 
     return 0;
 }
