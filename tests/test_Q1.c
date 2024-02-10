@@ -1,5 +1,5 @@
 #include "test_Q1.h"
-#include "question1.h"
+#include "../exercices/question1.h"
 #include "stdio.h"
 #include "stdlib.h"
 

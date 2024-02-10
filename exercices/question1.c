@@ -11,6 +11,8 @@ int **allocate_tab2D(unsigned int rows, unsigned int cols) {
     return tab2D;
 }
 
+/**********************************************************************/
+
 void allocate_tab2D_bis(unsigned int rows, unsigned int cols, int ***tab2D) {
     unsigned int i;
     *tab2D = (int **) malloc(rows * sizeof(int *));
@@ -18,6 +20,8 @@ void allocate_tab2D_bis(unsigned int rows, unsigned int cols, int ***tab2D) {
         (*tab2D)[i] = (int *) malloc(cols * sizeof(int));
     }
 }
+
+/**********************************************************************/
 
 int** fillTab(unsigned int rows, unsigned int cols, int **tab2D) {
     unsigned int i, j;
@@ -30,6 +34,8 @@ int** fillTab(unsigned int rows, unsigned int cols, int **tab2D) {
     return tab2D;
 }
 
+/**********************************************************************/
+
 void printTab(unsigned int rows, unsigned int cols, int **tab2D) {
     unsigned int i, j;
     for (i = 0; i < rows; i++) {
@@ -39,6 +45,8 @@ void printTab(unsigned int rows, unsigned int cols, int **tab2D) {
     }
 }
 
+/**********************************************************************/
+
 void freeTab(unsigned int rows, int **tab2D) {
     unsigned int i;
     for (i = 0; i < rows; i++) {
@@ -46,7 +54,5 @@ void freeTab(unsigned int rows, int **tab2D) {
     }
     free(tab2D);
 }
-
-//function to fill manually the created table
 
 

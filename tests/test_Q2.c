@@ -1,10 +1,9 @@
 #include "test_Q2.h"
-#include "question2.h"
+#include "../exercices/question2.h"
 #include "stdio.h"
-#include "stdlib.h"
 
 int test_Q2(unsigned int rows, unsigned int cols){
-    // matrix 1
+    // matrice 1
     t_matrice* mat1 = allocate_matrice(rows, cols);
     if (mat1 == NULL) {
         printf("Failed to allocate matrix 1\n");
@@ -14,10 +13,7 @@ int test_Q2(unsigned int rows, unsigned int cols){
     printf("Fill matrix 1:\n");
     fill_matrice(mat1);
 
-    printf("Matrix 1:\n");
-    print_matrice(mat1);
-
-    // matrix 2
+    // matrice 2
     t_matrice* mat2 = allocate_matrice(rows, cols);
     if (mat2 == NULL) {
         printf("Failed to allocate matrix 2\n");
@@ -27,6 +23,10 @@ int test_Q2(unsigned int rows, unsigned int cols){
 
     printf("Fill matrix 2:\n");
     fill_matrice(mat2);
+
+    //print matrices
+    printf("Matrix 1:\n");
+    print_matrice(mat1);
 
     printf("Matrix 2:\n");
     print_matrice(mat2);

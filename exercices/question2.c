@@ -1,5 +1,5 @@
 #include "question2.h"
-#import "question1.h"
+#include "question1.h"
 #include "stdio.h"
 #include "stdlib.h"
 
@@ -45,7 +45,7 @@ void print_matrice(t_matrice *mat) {
 
 /****************************************************************************/
 
-t_matrice* multiply_matrices(t_matrice* mat1, t_matrice* mat2) {
+t_matrice *multiply_matrices(t_matrice *mat1, t_matrice *mat2) {
     if (mat1 == NULL || mat2 == NULL || mat1->matrice == NULL || mat2->matrice == NULL) {
         return NULL;
     }
@@ -55,7 +55,7 @@ t_matrice* multiply_matrices(t_matrice* mat1, t_matrice* mat2) {
         return NULL;
     }
 
-    t_matrice* result = allocate_matrice(mat1->rows, mat2->cols);
+    t_matrice *result = allocate_matrice(mat1->rows, mat2->cols);
     if (result == NULL) {
         return NULL;
     }
@@ -74,7 +74,7 @@ t_matrice* multiply_matrices(t_matrice* mat1, t_matrice* mat2) {
 
 /****************************************************************************/
 
-void free_matrice(t_matrice* mat) {
+void free_matrice(t_matrice *mat) {
     if (mat == NULL || mat->matrice == NULL) {
         return;
     }

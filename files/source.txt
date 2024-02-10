@@ -1,0 +1,1 @@
+Ce fichier source.txt contient cet exemple de contenu pour tester la fonction copy_file_content.
