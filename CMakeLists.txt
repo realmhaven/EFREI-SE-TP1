@@ -15,4 +15,6 @@ add_executable(EFREI_SE_tp1 main.c
         exercices/question3.c
         exercices/question3.h
         tests/test_Q3.c
-        tests/test_Q3.h)
+        tests/test_Q3.h
+        exercices/question4.c
+        exercices/question4.h)
